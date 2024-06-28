@@ -50,8 +50,9 @@ jobs:
           Only use when specifically instructed by Radxa support.
         draft: false
         files: ".changelog/changelog.md"
+        name: "t${{ github.run_number }} (rsdk)"
         prerelease: true
-        tag_name: "t${{ github.run_number }}"
+        tag_name: "rsdk-t${{ github.run_number }}"
         target_commitish: "main"
         token: "${{ secrets.GITHUB_TOKEN }}"
 name: "Build image for test channel"
